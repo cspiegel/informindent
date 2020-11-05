@@ -1,0 +1,28 @@
+Vim auto-indent and ftplugin files for Inform 0.5.1
+Martin Bays <vim@zugzwang.port5.com> 
+Last Change: Sat Mar 06 01:00 PM 2004 GMT
+
+See the head of indent/inform.vim for notes and TODO
+
+This is a beta. Please send bug-reports, comments, patches, etc. to 
+	vim@zugzwang.port5.com
+
+INSTALLATION:
+
+	See :help plugin, but here's a quick walkthrough:
+
+	Put ./indent/inform.vim in your indent directory - on unix, that's 
+	~/.vim/indent/ - you might need to mkdir it first.
+	
+	Do similarly with ./ftplugin/inform.vim - that should go in ~/.vim/ftplugin/
+
+	You'll need to make sure this line (or equivalent) is in your ~/.vimrc:
+		set filetype indent plugin on
+
+	The indenting works much better if you're using syntax highlighting -
+	you might want to put
+		syntax on
+	in your ~/.vimrc
+
+	You might have problems with Vim thinking your .h includes are C files -
+	see http://www.stephenthomas.uklinux.net/informvim for a solution.
